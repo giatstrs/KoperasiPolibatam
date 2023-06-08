@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,600&display=swap');
+.dashboard-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+}
+.stat-info-container{
+    display: flex;
+    height: auto;
+    width: 67%;
+    flex-direction: column;
+}
+.stat-info-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 40px 10px 10px 10px;
+}
+
+.stat-info-box{
+    width: 220px;
+    height: 120px;
+    padding: 6px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+.info-pengeluaran{
+    background-color: #EB1D36;
+}
+.info-pemasukan{
+    background-color: #3CCF4E;
+}
+.info-saldo{
+    background-color: #A2B5BB;
+}
+.info-saldo:hover{
+    box-shadow: 0 0 12px #A2B5BB;
+    transform: translateY(-2px);
+}
+.info-pemasukan:hover{
+    box-shadow: 0 0 12px #3CCF4E;
+    transform: translateY(-2px);
+}
+.info-pengeluaran:hover{
+    box-shadow: 0 0 12px #EB1D36;
+    transform: translateY(-2px);
+}
+.grafik-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.stat-info-title{
+    font-size: 15px;
+    font-weight: 600;
+}
+.stat-info-detail{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -6px;
+    margin-bottom: 6px;
+    font: italic;
+}
+.stat-info-total{
+    font-size: 18px;
+}
+
+.data-grafik{
+    display: flex;
+    width: 360px;
+    height: 240px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+.data-grafik:hover{
+    box-shadow: 0 0 12px rgba(33, 146, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+.top-nasabah-container{
+    display: flex;
+    width: 33%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.data-top-nasabah{
+    display: flex;
+    height: 550px;
+    width: 100%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+    transition: all 0.5s ease-in-out;
+}
+.data-top-nasabah:hover{
+    transform: translateY(-2px);
+}
+
+.head-top-nasabah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #EF5B0C;
+    color: #ffffff;
+}
+.head-top-nasabah span{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+}
+
+.body-top-nasabah{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 6px 10px 6px;
+}
+.data-sequence{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+.data-sequence i{
+    font-size: 32px;
+}
+.data-rank{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.rank-1{
+    color: #ffd700;
+}
+.rank-2{
+    color: #c0c0c0;
+}
+.rank-3{
+    color: #bf8970;
+}
+.rank-4{
+    color: #bf8970;
+    /* color: #0079FF; */
+}
+.sequence{
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-size: 15px;
+    left: 16px;
+    top: 14px;
+}
+.sequence-shield{
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-size: 15px;
+    left: 15px;
+    top: 10px;
+}
+.sequence-shield-2{
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-size: 15px;
+    left: 11px;
+    top: 10px;
+}
+
+.detail-informasi{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+    font-family: 'Lora', serif;
+}
+.detail-informasi span:nth-child(1){
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Lora', serif;
+
+}
+.detail-informasi span:nth-child(2){
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: -6px;
+    font-family: 'Lora', serif;
+}
